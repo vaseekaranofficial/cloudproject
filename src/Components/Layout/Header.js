@@ -42,6 +42,10 @@ const Header = (props)=> {
                 <p>Contact</p>
                 {activeLink==="Contact" && <hr/>} 
                  </Link>
+                 <Link onClick={()=>{setActiveLink("profilelong");window.scrollTo(0,0)}} to="/profile" style={{textDecorationLine:'none'}} > 
+                <p>Profile</p>
+                {activeLink==="profilelong" && <hr/>} 
+                 </Link> 
                 </motion.ul>
               
               <div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:10}}>

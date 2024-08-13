@@ -6,6 +6,7 @@ import CartProvider from "./Components/Context/CartProvider";
 import { Route, Routes } from "react-router-dom";
 import { Contact } from "./Components/Contact/Contact";
 import LoginSignup from "./Components/Register/LoginSignup";
+import profilelong from "./Components/profile/profilelong";
 import Footer from "./Components/Footer/Footer";
 import PlaceOrder from "./Components/Order/PlaceOrder";
 import AppDownload from "./Components/AppDownload/AppDownload";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/register" element={LoginSignup} />
         <Route path="/order" element={<PlaceOrder/>} />
         <Route path="/getApp" element={<AppDownload/>} />
+        <Route path="/profile" element={<profilelong/>} />
        </Routes>
 
        <Footer/>
